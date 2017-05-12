@@ -247,7 +247,7 @@ input {
 }
 
 textarea {
-  height: 20vh;
+  height: 30vh;
 }
 
 /*This is the our story section*/
@@ -291,4 +291,10 @@ footer {
 
 .facebook {
   padding-top: 2%;
+}
+
+@media (max-width:720px) {
+  .fakebutton {
+    padding: 5%;
+  }
 }
