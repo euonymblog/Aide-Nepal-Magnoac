@@ -209,7 +209,9 @@ div.gallery {
 
 /*This is the support page section*/
 
-
+.pageheader {
+  min-height: 30vh;
+}
 
 .pageheader h2 {
   margin: 5% 0;
