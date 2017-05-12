@@ -250,6 +250,10 @@ textarea {
   height: 30vh;
 }
 
+.supportbuttons div {
+  padding: 15% 3%;
+}
+
 /*This is the our story section*/
 
 .ourstory {
