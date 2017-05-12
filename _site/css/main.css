@@ -2,7 +2,7 @@
   padding: 0%;
   margin: 0%;
   box-sizing: border-box;
-  border: 1px solid lightgrey;
+  /*border: 1px solid lightgrey;*/
 }
 
 /*This is the body section*/
@@ -101,6 +101,8 @@ header, footer {
   color: whitesmoke;
 }
 
+
+
 .wrapper h1, h2 {
   align-content: center;
 }
@@ -114,9 +116,12 @@ header, footer {
   margin: 20% 0;
 }
 
+
 .wrapper2 div {
   margin: 0 10%;
 }
+
+
 
 /*This is the header section*/
 
@@ -124,6 +129,7 @@ header {
 padding: 2%;
 background-color: whitesmoke;
 width: 100%;
+border-bottom: 2px solid firebrick;
 }
 
 .nav {
@@ -145,12 +151,14 @@ padding: 2%;
 
 /*.news*/
 
-/*.title {
 
-}*/
 
 .fundraising div {
   background-color: midnightblue;
+}
+
+.fundraising {
+  margin: 2% 0;
 }
 
 .fundraising h2 {
@@ -187,14 +195,21 @@ polygon{
 
 div.gallery {
   background-color: firebrick;
-  min-height: 20vh;
+  min-height: 30vh;
+}
+
+/*.newsgrid {
+  border: 2px solid midnightblue;
+}*/
+
+.newscol {
+  border-right: 2px solid midnightblue;
+  padding: 2%;
 }
 
 /*This is the support page section*/
 
-.pageheader {
-  align-items: center;
-}
+
 
 .pageheader h2 {
   margin: 5% 0;
@@ -221,7 +236,7 @@ button {
 
 
 .mailinglist div {
-  margin: 2% 10%;
+  margin: 2% 0;
 }
 
 input {
@@ -240,11 +255,29 @@ textarea {
 }
 
 
-/*This is our posts layout*/
+/*This is the news page*/
 
-.posttext {
-  margin:
+.newsitem {
+  min-height: 30vh;
+  margin: 5% 5%;
+
 }
+
+.newsitem p {
+  font-size: 1.2rem;
+  line-height: 120%;
+}
+
+.fix {
+  align-items: center;
+}
+
+
+/*This is posts layout*/
+
+/*.posttext {
+  margin:
+}*/
 
 
 /*This is a footer section*/

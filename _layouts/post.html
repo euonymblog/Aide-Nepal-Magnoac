@@ -2,19 +2,19 @@
 layout: default
 ---
 
-<title>{{News story}}</title>
+<title>News story</title>
 
-<section class="topimage pageheader">
-  <div class="topimage" style="background-image: url('{{image}}')">
-    <h2>{{ title }}</h2>
+<section class="pageheader">
+  <div style="background-image: url('{{page.image}}'); background-repeat: no-repeat; background-size: cover; background-position: center; min-height: 30vh; align-items: center;">
+    <h2>{{ page.title }}</h2>
   </div>
 </section>
 
-<div class="wrapper2">
+<div class="newsitem">
 
-
-
-{{ content }}
+<p>
+  {{ content }}
+</p>
 
 
 </div>

@@ -13,10 +13,10 @@ layout: default
 
     <div class="col-4_sm-12 topimage heroimage">
       <div class="nepalflag">
-        <svg viewBox="0 0 70 70">
-          <polygon points="0,0 50,30 20,30 70,70 70,0 0,0"/>
+          <!-- <svg viewBox="0 0 70 70">
+            <polygon points="0,0 50,30 20,30 70,70 70,0 0,0"/>
 
-        </svg>
+          </svg> -->
       </div>
     </div>
 
@@ -33,44 +33,29 @@ layout: default
 
 <section class="news">
   <div>
-    <h4>News & Events</h4>
+    <a href="/news.html"><h2>News & Events</h2></a>
   </div>
-  <div class="grid">
+  <div class="grid newsgrid">
 
+{% for post in site.posts %}
 
-
-    <div class="col-4_sm-6_xs-12">
+    <div class="col-4_sm-6_xs-12 newscol">
 
       <div>
-        {{ post.title}}
+        <a href="{{post.url}}"></a><h3>{{ post.title}}</h3></a>
       </div>
       <div>
         {{ post.excerpt}}
       </div>
     </div>
 
-    <div class="col-4_sm-6_xs-12">
-      <div>
-        {{ post.title}}
-      </div>
-      <div>
-        {{ post.excerpt}}
-      </div>
-    </div>
+{% endfor %}
 
-    <div class="col-4_sm-0_xs-12">
-      <div>
-        {{ post.title}}
-      </div>
-      <div>
-        {{ post.excerpt}}
-      </div>
-    </div>
   </div>
 </section>
 
 <section class="fundraising">
-  <a href="">
+  <a href="/support-nepal.html">
     <div>
     <h2>VOLUNTEER|DONATE</h2>
     </div>
@@ -79,7 +64,7 @@ layout: default
 </section>
 
 <section>
-  <h4>Photos</h4>
+  <h2>Photos</h2>
   <div class="grid">
     <div class="col-3_sm-6_xs-12 gallery gallery1">
 

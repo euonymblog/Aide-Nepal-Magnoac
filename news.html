@@ -3,31 +3,31 @@ layout: default
 ---
 <title>News and Events</title>
 <section class="topimage pageheader">
-  <div class="topimage">
+  <div>
     <h2>News and Events</h2>
   </div>
 </section>
 
 <section>
-  <div>
-      {% for post in site.reviews %}
-  <a href="{{post.url}}" class="grid">
-    <div class="col-4" style="background-image: url('{{post.image}}') background-repeat: no-repeat; background-size: cover; background-position: center;">
-
-    </div>
-
-    <div class="col-8">
-
-      <div>
-      {{post.title}}
+  <div class="grid">
+      {% for post in site.posts %}
+    <!-- <a href="{{ post.url }}" > -->
+      <div class="col-4" style="background-image: url('{{post.image}}'); background-repeat: no-repeat; background-size: cover; background-position: center;">
       </div>
-      <div>
-      {{post.excerpt}}
+    <!-- </a> -->
+
+      <div class="col-8">
+
+          <div>
+          <a href="{{ post.url }}"><h3>{{post.title}}</h3></a>
+          </div>
+          <div>
+          {{post.excerpt}}
+          </div>
+
       </div>
 
-    </div>
-    </a>
+
       {% endfor %}
-  </div>
-
+    </div>
 </section>
