@@ -1,7 +1,8 @@
 *{
   padding: 0%;
-  margin: 0%:
+  margin: 0%;
   box-sizing: border-box;
+  border: 1px solid lightgrey;
 }
 
 /*This is the body section*/
@@ -11,6 +12,7 @@ body {
   padding: auto;
   background-color: whitesmoke;
   text-align: center;
+
 }
 
 
@@ -29,30 +31,48 @@ h2 {
   font-size: 1.5rem;
 }
 
+h3 {
+  font-size: 1.4
+}
+
+h4 {
+  font-size: 1.3
+}
+
+h5 {
+  font-size: 1.2
+}
+
 p {
-  color: black
+  color: midnightblue;
   font-family: 'Open Sans', sans-serif;
   text-align: justify;
+  font-size: 0.8rem;
 }
 
 a {
   font-family: 'Open Sans', sans-serif;
   text-decoration: none;
+  color: midnightblue;
 
 }
 
-i{
-
+a:hover {
+  color:firebrick;
 }
+
+/*i{
+
+}*/
 
 .fa {
   color: midnightblue;
   font-size: 4rem;
 }
 
-button {
+/*button {
 
-}
+}*/
 
 
 
@@ -67,6 +87,8 @@ header, footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  min-height: 30vh;
+  align-items: center;
 }
 
 .fakebutton {
@@ -79,12 +101,17 @@ header, footer {
   color: whitesmoke;
 }
 
-.wrapper {
+.wrapper h1, h2 {
   align-content: center;
 }
 
 .title {
   padding: 2%;
+  align-items: center;
+}
+
+.title h1 {
+  margin: 20% 0;
 }
 
 /*This is the header section*/
@@ -112,25 +139,102 @@ padding: 2%;
 
 /*This is the homepage styling*/
 
-.news
+/*.news*/
 
-.fundraising
-
-.flag {
+.title {
 
 }
 
+.fundraising div {
+  background-color: midnightblue;
+}
 
-/*This is another blank section*/
+.fundraising h2 {
+  color: whitesmoke;
+}
 
-section.another {
+
+
+/*This is the SVG styling*/
+div.nepalflag{
+  position:relative;
+
+}
+svg{
+  position:absolute;
+  top:0;
+  width:100%;
+  right: -1%;
+}
+polygon{
+  fill: whitesmoke;
+  stroke: midnightblue;
+  stroke-width:0;
+}
+
+.heroimage {
+  padding: 0;
+}
+
+/*SVG styling ends*/
+
+div.gallery {
+  background-color: firebrick;
+  min-height: 20vh;
+}
+
+/*This is the support page section*/
+
+.pageheader {
+  align-items: center;
+}
+
+.pageheader h2 {
+  margin: 5% 0;
+  background-color: rgba(245,245,245, 0.5);
+}
+
+.forminput input, textarea {
+  font-family: 'Open Sans', sans-serif;
+  width: 70%;
+}
+
+/*.formbutton {
+  background-color: midnightblue;
+}*/
+
+button {
+  font-family: 'Open Sans', sans-serif;
+  background-color: midnightblue;
+  color: whitesmoke;
+  padding: 2%;
+  font-size: 1rem;
+}
+
+.wrapper2 div {
+  margin: 0 10%;
+}
+
+.mailinglist div {
+  margin: 2% 10%;
+}
+
+input {
+  height: 5vh;
 
 }
 
-.another h2
+textarea {
+  height: 20vh;
+}
 
 /*This is a footer section*/
 
-.line {
-  border-top: 3px solid midnightblue;
+footer {
+  margin-top: 5%;
+  padding: 5%
+}
+
+.facebook {
+  padding-top: 2%;
 }

@@ -5,17 +5,22 @@ layout: default
 
 <section>
   <!-- main image with SVG -->
-  <div class="grid">
+  <div class="grid-spaceBetween">
 
-    <div class="col-3 title wrapper">
+    <div class="col-3_sm-12 title wrapper">
       <h1>Aide Nepal Magnoac</h1>
     </div>
 
-    <div class="col-6 topimage">
+    <div class="col-4_sm-12 topimage heroimage">
+      <div class="nepalflag">
+        <svg viewBox="0 0 70 70">
+          <polygon points="0,0 50,30 20,30 70,70 70,0 0,0"/>
 
+        </svg>
+      </div>
     </div>
 
-    <div class="col-3 title">
+    <div class="col-3_sm-12 title">
       <i class="fa fa-quote-left" aria-hidden="true"></i><h2>Better to light a candle than complain about the dark</h2><i class="fa fa-quote-right" aria-hidden="true"></i>
     </div>
 
@@ -23,36 +28,43 @@ layout: default
 
 
 
+
 </section>
 
-<section class="news grid">
+<section class="news">
   <div>
     <h4>News & Events</h4>
   </div>
-  <div class="col-4">
-    <div>
-      {{ post.title}}
-    </div>
-    <div>
-      {{ post.excerpt}}
-    </div>
-  </div>
+  <div class="grid">
 
-  <div class="col-4">
-    <div>
-      {{ post.title}}
-    </div>
-    <div>
-      {{ post.excerpt}}
-    </div>
-  </div>
 
-  <div class="col-4">
-    <div>
-      {{ post.title}}
+
+    <div class="col-4_sm-6_xs-12">
+
+      <div>
+        {{ post.title}}
+      </div>
+      <div>
+        {{ post.excerpt}}
+      </div>
     </div>
-    <div>
-      {{ post.excerpt}}
+
+    <div class="col-4_sm-6_xs-12">
+      <div>
+        {{ post.title}}
+      </div>
+      <div>
+        {{ post.excerpt}}
+      </div>
+    </div>
+
+    <div class="col-4_sm-0_xs-12">
+      <div>
+        {{ post.title}}
+      </div>
+      <div>
+        {{ post.excerpt}}
+      </div>
     </div>
   </div>
 </section>
@@ -67,6 +79,24 @@ layout: default
 </section>
 
 <section>
+  <h4>Photos</h4>
+  <div class="grid">
+    <div class="col-3_sm-6_xs-12 gallery gallery1">
+
+    </div>
+
+    <div class="col-3_sm-6_xs-12 gallery gallery2">
+
+    </div>
+
+    <div class="col-3_sm-6_xs-12 gallery gallery3">
+
+    </div>
+
+    <div class="col-3_sm-6_xs-12 gallery gallery4">
+
+    </div>
+  </div>
 
 <!-- PHOTO GALLERY HERE -->
 
